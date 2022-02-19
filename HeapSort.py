@@ -11,7 +11,6 @@ def heapSort(data: list) -> list:
 
     # Перенос максимального элемента в концен массива и восстановление сортирующего дерева
     for end in range(n-1, 0, -1):
-        print(end)
         # Замена максимального элемента с последним элементом массива
         data[end], data[0] = data[0], data[end]
 
@@ -31,7 +30,6 @@ def heapSift(data, start, end):
     root = start
 
     while True:
-        print(data)
         child = root * 2 + 1   # Левый потомок
         # Дочерний элемент за пределами подмассива
         if child > end:
